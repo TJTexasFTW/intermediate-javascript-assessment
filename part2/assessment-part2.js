@@ -44,10 +44,14 @@ function noWeakLink() {
     url: '/api/users'
   })
   // CODE HERE...
-// .then(response) {
-  // firstUser = response.data[0];
-  // return response;
-// }
+.then(function (response) {
+  firstUser = response.data[0];
+  return response;
+}).then (function (response) {
+  thirdUser = response.data[2];
+  return response.data[9];
+
+})
   //I haven't a clue
 
 }
@@ -96,9 +100,10 @@ var boundToElephant = large.bind(elephant);
 
 function deathStar(capacity, crew) {
   //yeah - right
+
+  return capacity.bind(crew);
+
 }
-
-
 
 // *************
 // * PROBLEM 4 *
@@ -133,8 +138,7 @@ function accountingOffice(assets) {
 
 // forgetter helps keep track of things people don't want to forget.
 // forgetter needs to return a function called rememberall.
-// rememberall takes in a parameter:
-// item (String).
+// rememberall takes in a parameter: item (String).
 
 // When rememberall is invoked, it will store the new item
 // to be remembered along with all other previous items remembered.
@@ -152,7 +156,7 @@ function forgetter(String) {
   let thingToRemember = {};
 
   return function rememberall(item, String) {
-    thingToRemember.id = item;
+    thingToRemember.name = item;
     thingToRemember.string = String;
     remember = remember.push(thingToRemember);
     return remember
@@ -187,5 +191,11 @@ function forgetter(String) {
 // CODE HERE...
 
 function frodo (startingHungerValue, startingDangerValue) {
+  var one = startingHungerValue;
+  var two = startingDangerValue;
+
+  var someObject = {};
+
+  
 
 }
