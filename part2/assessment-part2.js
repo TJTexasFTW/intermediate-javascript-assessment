@@ -74,7 +74,7 @@ function large() {
   return 'My name is ' + this.name + ' and I am very heavy!'
 }
 // CODE HERE...
-
+var boundToElephant = large.bind(elephant);
 
 
 // *************
@@ -88,6 +88,8 @@ function large() {
 // and return the bound function.
 
 // CODE HERE...
+
+
 
 
 
@@ -128,7 +130,18 @@ function large() {
 // };
 
 // CODE HERE...
+function forgetter(String) {
 
+  let remember = []
+  let thingToRemember = {};
+
+  function rememberall(item, String) {
+    thingToRemember.id = item;
+    thingToRemember.string = String;
+    remember = remember.push(thingToRemember)
+    return remember
+  }
+}
 
 
 // *************
