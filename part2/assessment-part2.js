@@ -44,6 +44,11 @@ function noWeakLink() {
     url: '/api/users'
   })
   // CODE HERE...
+// .then(response) {
+  // firstUser = response.data[0];
+  // return response;
+// }
+  //I haven't a clue
 
 }
 
@@ -89,7 +94,9 @@ var boundToElephant = large.bind(elephant);
 
 // CODE HERE...
 
-
+function deathStar(capacity, crew) {
+  //yeah - right
+}
 
 
 
@@ -105,6 +112,15 @@ var boundToElephant = large.bind(elephant);
 // The closure function will return the combined value of assets and liabilities.
 
 // CODE HERE...
+function accountingOffice(assets) {
+
+  return function cb (liabilities) {
+    var accountant = assets + liabilities;
+    return accountant;
+  }
+
+}
+
 
 
 
@@ -135,10 +151,10 @@ function forgetter(String) {
   let remember = []
   let thingToRemember = {};
 
-  function rememberall(item, String) {
+  return function rememberall(item, String) {
     thingToRemember.id = item;
     thingToRemember.string = String;
-    remember = remember.push(thingToRemember)
+    remember = remember.push(thingToRemember);
     return remember
   }
 }
@@ -169,3 +185,7 @@ function forgetter(String) {
 // NOTE: Neither hunger nor danger should be able to exceed 100 or drop below 0.
 
 // CODE HERE...
+
+function frodo (startingHungerValue, startingDangerValue) {
+
+}
