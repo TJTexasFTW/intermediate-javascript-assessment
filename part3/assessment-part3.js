@@ -38,7 +38,7 @@ function callBinding(magicAnimals, updateAnimal, id) {
 
 function applyBinding(magicAnimals, updateAnimal, id) {
 
-    let animalFound = magicAnimals[id];
+    let animalFound = magicAnimals.find(x => x.id === id);
 
     return updateAnimal.apply(animalFound, ['being majestic', 'eating rainbows'])
 }
